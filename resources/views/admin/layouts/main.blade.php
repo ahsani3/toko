@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Admin Portofolio | {{ $title }}</title>
+	<title>TokoKami | {{ $title }}</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 	<link rel="icon" href="/admin_assets/img/icon.ico" type="image/x-icon" />
 
@@ -70,7 +70,7 @@
 										<div class="user-box">
 											<div class="avatar-lg"><img src="/admin_assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
 											<div class="u-text">
-												<h4>Ahsani</h4>
+												<h4>Admin</h4>
 												<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
 											</div>
 										</div>
@@ -105,7 +105,7 @@
 						<div class="info">
 							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 								<span>
-									Ahsani
+									Admin
 									<span class="user-level">Administrator</span>
 									<span class="caret"></span>
 								</span>
@@ -140,17 +140,22 @@
 							</span>
 							<h4 class="text-section">Components</h4>
 						</li>
-						<li class="nav-item {{ ($title == 'Dashboard') ? 'active' : '' }}">
+						<li class="nav-item">
 							<a href="/admin">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
 							</a>
 						</li>
+						<li class="nav-item">
+							<a href="/admin/produk">
+								<i class="fas fa-shopping-bag"></i>
+								<p>Produk</p>
+							</a>
 						</li>
-						<li class="nav-item {{ ($title == 'Blog') ? 'active' : '' }}">
-							<a href="/admin/blog">
-								<i class="fas fa-home"></i>
-								<p>Blog</p>
+						<li class="nav-item">
+							<a href="/admin/kategori">
+								<i class="fas fa-tags"></i>
+								<p>Kategori</p>
 							</a>
 						</li>
 						<li class="nav-section">
@@ -159,7 +164,7 @@
 							</span>
 							<h4 class="text-section">Store</h4>
 						</li>
-						<li class="nav-item {{ ($title == 'Blog') ? 'active' : '' }}">
+						<li class="nav-item">
 							<a href="/">
 								<i class="fas fa-store-alt"></i>
 								<p>TokoKami</p>
@@ -184,7 +189,7 @@
 
 					</nav>
 					<div class="copyright ml-auto">
-						2023, Muhammad Ahsani Nur Taqwimi</a>
+						2023, Ahsani, Ryan, Sajid</a>
 					</div>
 				</div>
 			</footer>
@@ -355,7 +360,7 @@
 
 			// Add Row
 			$('#add-row').DataTable({
-				"pageLength": 5,
+				"pageLength": 10,
 			});
 
 			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
